@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+}
+
+.nav{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 20px 2%;
+    justify-content: space-between;
+    background-color: #f9f5ea;
+    font-family: OCR A Std, monospace;
+}
+
+.nav a{
+    font-size: 20px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s;
+    height: 100%;
+}
+
+.link:hover{
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+.link:active{
+    opacity: 0.7;
+}
+
+.logo-wrapper{
+    width: 50px;
+    height: 50px;
+}
+
+.logo-wrapper img{
+    width: 100%;
+}
+
+.mid{
+    font-family: Verdana, sans-serif;
+    display: grid;
+    height: 52rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 2fr 1fr;
+    gap: 0px 20px;
+    background-color: #f9f5ea;
+}
+
+.mid-element:last-child{
+    grid-column: span 2;
+    grid-row: 2;
+}
+
+.mid-element:nth-child(3), .mid-element:nth-child(4){
+    grid-row: span 2;
+}
+
+.mid-element{
+    border: none;
+    background-color: white;
+    border: 1px solid black;
+    overflow-y: auto;
+}
+
+.mid-element ol, ul{
+    padding: 10px;
+}
+
+.even {
+    background-color: black;
+    color: white;
+}
+
+.odd {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 470px){
+
+    .nav{
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .nav h2{
+        text-align: center;
+    }
+
+    .mid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr 1fr;
+    }
+}
+
+.footer{
+    background-color: #000000;
+    transition: background-color 1s linear, color 1s;
+    justify-content: space-around;
+    color: #ffffef;
+    font-family: unify sans regular;
+    height: 10rem;
+}
+
+.footer:hover{
+    background-color: #f9f5ea;
+    color:black;
+}
+
+.footer span{
+    font-family: Lucida Console;
+    font-size: 13px;
+}
